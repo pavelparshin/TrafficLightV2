@@ -15,9 +15,3 @@ struct TrafficLightBody: View {
             .overlay(Rectangle().stroke(Color.gray, lineWidth: 10))
     }
 }
-
-struct TrafficLightBody_Previews: PreviewProvider {
-    static var previews: some View {
-        TrafficLightBody()
-    }
-}

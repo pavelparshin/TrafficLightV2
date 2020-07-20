@@ -34,9 +34,3 @@ struct TrafficLight: View {
         }
     }
 }
-
-struct TrafficLight_Previews: PreviewProvider {
-    static var previews: some View {
-        TrafficLight(currentLight: .red)
-    }
-}

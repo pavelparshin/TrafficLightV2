@@ -19,9 +19,3 @@ struct ColorLight: View {
             .overlay(Circle().stroke(Color.white, lineWidth: 3))
     }
 }
-
-struct ColorLight_Previews: PreviewProvider {
-    static var previews: some View {
-        ColorLight(color: .red, alpha: 0.3)
-    }
-}
