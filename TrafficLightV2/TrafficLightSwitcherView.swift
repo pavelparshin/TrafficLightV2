@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TrafficLightSwitcherView.swift
 //  TrafficLightV2
 //
 //  Created by Pavel Parshin on 20.07.2020.
@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TrafficLightSwitcherView: View {
     @State private var textButton = "Start"
-    @State private var currentColor: UIColor = .red
+    @State private var currentColor: UIColor = .gray
     
     var body: some View {
         VStack {
@@ -23,16 +23,22 @@ struct ContentView: View {
                     .font(.title)
             }
         }
-    .padding()
+        .padding()
     }
     
     private func buttonPressed() {
         textButton = "Next"
+        
+        switch currentColor {
+        case .red: currentColor = .yellow
+        case .yellow: currentColor = .green
+        default: currentColor = .red
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TrafficLightSwitcherView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TrafficLightSwitcherView()
     }
 }

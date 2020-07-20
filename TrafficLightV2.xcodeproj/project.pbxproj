@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B42DE7324C61BFD00544D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE7224C61BFD00544D00 /* AppDelegate.swift */; };
 		2B42DE7524C61BFD00544D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE7424C61BFD00544D00 /* SceneDelegate.swift */; };
-		2B42DE7724C61BFD00544D00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE7624C61BFD00544D00 /* ContentView.swift */; };
+		2B42DE7724C61BFD00544D00 /* TrafficLightSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE7624C61BFD00544D00 /* TrafficLightSwitcherView.swift */; };
 		2B42DE7924C61BFF00544D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7824C61BFF00544D00 /* Assets.xcassets */; };
 		2B42DE7C24C61BFF00544D00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7B24C61BFF00544D00 /* Preview Assets.xcassets */; };
 		2B42DE7F24C61BFF00544D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7D24C61BFF00544D00 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		2B42DE6F24C61BFD00544D00 /* TrafficLightV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B42DE7224C61BFD00544D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B42DE7424C61BFD00544D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B42DE7624C61BFD00544D00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B42DE7624C61BFD00544D00 /* TrafficLightSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSwitcherView.swift; sourceTree = "<group>"; };
 		2B42DE7824C61BFF00544D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B42DE7B24C61BFF00544D00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B42DE7E24C61BFF00544D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,10 +62,8 @@
 		2B42DE7124C61BFD00544D00 /* TrafficLightV2 */ = {
 			isa = PBXGroup;
 			children = (
-				2B42DE7624C61BFD00544D00 /* ContentView.swift */,
-				2B42DE8924C61CB300544D00 /* ColorLight.swift */,
-				2B42DE8B24C61EB200544D00 /* TrafficLightBody.swift */,
-				2B42DE8D24C61FDD00544D00 /* TrafficLight.swift */,
+				2B42DE7624C61BFD00544D00 /* TrafficLightSwitcherView.swift */,
+				2B5EFF3F24C631A600A6327C /* TrafficLightComponents */,
 				2B42DE8824C61C8500544D00 /* Storyboard */,
 				2B42DE8724C61C6F00544D00 /* Source */,
 				2B42DE8624C61C3E00544D00 /* SupportingFiles */,
@@ -106,6 +104,16 @@
 				2B42DE7D24C61BFF00544D00 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2B5EFF3F24C631A600A6327C /* TrafficLightComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2B42DE8924C61CB300544D00 /* ColorLight.swift */,
+				2B42DE8B24C61EB200544D00 /* TrafficLightBody.swift */,
+				2B42DE8D24C61FDD00544D00 /* TrafficLight.swift */,
+			);
+			path = TrafficLightComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +192,7 @@
 				2B42DE8E24C61FDD00544D00 /* TrafficLight.swift in Sources */,
 				2B42DE8A24C61CB300544D00 /* ColorLight.swift in Sources */,
 				2B42DE8C24C61EB200544D00 /* TrafficLightBody.swift in Sources */,
-				2B42DE7724C61BFD00544D00 /* ContentView.swift in Sources */,
+				2B42DE7724C61BFD00544D00 /* TrafficLightSwitcherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

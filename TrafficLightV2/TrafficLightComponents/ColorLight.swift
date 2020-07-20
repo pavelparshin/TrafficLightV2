@@ -14,7 +14,6 @@ struct ColorLight: View {
     
     var body: some View {
         Color(color.withAlphaComponent(alpha))
-//        Color(color)
             .frame(width: 125, height: 125)
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 3))

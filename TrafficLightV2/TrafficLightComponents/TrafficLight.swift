@@ -11,9 +11,17 @@ import SwiftUI
 struct TrafficLight: View {
     var currentLight: UIColor
     
-    @State private var redAlpha: CGFloat = 0.3
-    @State private var yellowAlpha: CGFloat  = 0.3
-    @State private var greenAlpha: CGFloat  = 0.3
+    private var redAlpha: CGFloat {
+        return currentLight == .red ? 1 : 0.3
+    }
+    
+    private var yellowAlpha: CGFloat {
+        return currentLight == .yellow ? 1 : 0.3
+    }
+    
+    private var greenAlpha: CGFloat  {
+        return currentLight == .green ? 1 : 0.3
+    }
     
     var body: some View {
         ZStack {
@@ -25,24 +33,6 @@ struct TrafficLight: View {
             }
         }
     }
-    
-//    private func setColorAlpha() {
-//        defaultColor()
-//        switch currentLight {
-//        case .red: redAlpha = 1
-//        case .yellow: yellowAlpha = 1
-//        case .green: greenAlpha = 1
-//        default:
-//            return
-//        }
-//        print(redAlpha)
-//    }
-//
-//    private func defaultColor() {
-//        redAlpha = 0.3
-//        yellowAlpha = 0.3
-//        greenAlpha = 0.3
-//    }
 }
 
 struct TrafficLight_Previews: PreviewProvider {
