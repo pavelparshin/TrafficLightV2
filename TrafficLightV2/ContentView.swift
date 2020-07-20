@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var textButton = "Start"
+    @State private var currentColor: UIColor = .red
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            TrafficLight(currentLight: currentColor)
+            
+            Spacer()
+            
+            Button(action:  { self.buttonPressed() }) {
+                Text(textButton)
+                    .font(.title)
+            }
+        }
+    .padding()
+    }
+    
+    private func buttonPressed() {
+        textButton = "Next"
     }
 }
 

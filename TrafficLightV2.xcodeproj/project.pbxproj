@@ -13,6 +13,9 @@
 		2B42DE7924C61BFF00544D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7824C61BFF00544D00 /* Assets.xcassets */; };
 		2B42DE7C24C61BFF00544D00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7B24C61BFF00544D00 /* Preview Assets.xcassets */; };
 		2B42DE7F24C61BFF00544D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B42DE7D24C61BFF00544D00 /* LaunchScreen.storyboard */; };
+		2B42DE8A24C61CB300544D00 /* ColorLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE8924C61CB300544D00 /* ColorLight.swift */; };
+		2B42DE8C24C61EB200544D00 /* TrafficLightBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE8B24C61EB200544D00 /* TrafficLightBody.swift */; };
+		2B42DE8E24C61FDD00544D00 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DE8D24C61FDD00544D00 /* TrafficLight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2B42DE7B24C61BFF00544D00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B42DE7E24C61BFF00544D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B42DE8024C61BFF00544D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B42DE8924C61CB300544D00 /* ColorLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLight.swift; sourceTree = "<group>"; };
+		2B42DE8B24C61EB200544D00 /* TrafficLightBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightBody.swift; sourceTree = "<group>"; };
+		2B42DE8D24C61FDD00544D00 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,13 @@
 		2B42DE7124C61BFD00544D00 /* TrafficLightV2 */ = {
 			isa = PBXGroup;
 			children = (
-				2B42DE7224C61BFD00544D00 /* AppDelegate.swift */,
-				2B42DE7424C61BFD00544D00 /* SceneDelegate.swift */,
 				2B42DE7624C61BFD00544D00 /* ContentView.swift */,
-				2B42DE7824C61BFF00544D00 /* Assets.xcassets */,
-				2B42DE7D24C61BFF00544D00 /* LaunchScreen.storyboard */,
-				2B42DE8024C61BFF00544D00 /* Info.plist */,
+				2B42DE8924C61CB300544D00 /* ColorLight.swift */,
+				2B42DE8B24C61EB200544D00 /* TrafficLightBody.swift */,
+				2B42DE8D24C61FDD00544D00 /* TrafficLight.swift */,
+				2B42DE8824C61C8500544D00 /* Storyboard */,
+				2B42DE8724C61C6F00544D00 /* Source */,
+				2B42DE8624C61C3E00544D00 /* SupportingFiles */,
 				2B42DE7A24C61BFF00544D00 /* Preview Content */,
 			);
 			path = TrafficLightV2;
@@ -73,6 +80,32 @@
 				2B42DE7B24C61BFF00544D00 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B42DE8624C61C3E00544D00 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2B42DE7224C61BFD00544D00 /* AppDelegate.swift */,
+				2B42DE7424C61BFD00544D00 /* SceneDelegate.swift */,
+				2B42DE8024C61BFF00544D00 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2B42DE8724C61C6F00544D00 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2B42DE7824C61BFF00544D00 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2B42DE8824C61C8500544D00 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2B42DE7D24C61BFF00544D00 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +181,9 @@
 			files = (
 				2B42DE7324C61BFD00544D00 /* AppDelegate.swift in Sources */,
 				2B42DE7524C61BFD00544D00 /* SceneDelegate.swift in Sources */,
+				2B42DE8E24C61FDD00544D00 /* TrafficLight.swift in Sources */,
+				2B42DE8A24C61CB300544D00 /* ColorLight.swift in Sources */,
+				2B42DE8C24C61EB200544D00 /* TrafficLightBody.swift in Sources */,
 				2B42DE7724C61BFD00544D00 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrafficLightV2/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZXQUQVQEL;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TrafficLightV2/Info.plist;
+				INFOPLIST_FILE = TrafficLightV2/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrafficLightV2/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZXQUQVQEL;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TrafficLightV2/Info.plist;
+				INFOPLIST_FILE = TrafficLightV2/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
